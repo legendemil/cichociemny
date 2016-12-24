@@ -1,0 +1,31 @@
+.gallery {
+  background-image: url(../img/main-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__heading {
+  font-weight: 700;
+  padding: 5rem;
+  margin: 0;
+}
+
+.my-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.my-gallery__figure {
+  float: left;
+  margin: 2rem;
+}
+
+.my-gallery__figure img {
+  width: 20rem;
+}
+
+.my-gallery__figure figcaption {
+  display: none;
+}
