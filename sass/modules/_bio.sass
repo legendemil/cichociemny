@@ -1,0 +1,48 @@
+//bio
+
+.bio
+	perspective: 1000px
+	overflow: hidden
+	background-color: $white
+	&__heading
+		padding:
+			top: 10rem
+			bottom: 2rem
+		text-align: center
+		font-weight: 400
+		text-transform: uppercase
+		@media screen and (max-width: $bp-md)
+			font-size: 3rem
+			padding:
+				top: 2rem
+	&-info
+		position: relative
+		margin:
+				top: 14rem
+				bottom: 7rem
+		opacity: .1
+		transform: translateY(10px)
+		transition: all .6s cubic-bezier(.54,1.12,.86,1.09)
+		&.is-showed	
+			opacity: 1
+			transform: translateY(0px)
+		&:last-child
+			&:after
+				content: none
+		&:after
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			content: "\25CF		\25CF		\25CF"
+		&__heading
+			color: $color3 !important
+			text-align: center
+			font-weight: 300
+			margin: 0 0 2rem
+			@media screen and (max-width: $bp-md)
+				font-size: 3rem
+				margin: 2rem 0 2rem
+		&__text
+			+article-text
+			@media screen and (max-width: $bp-md)
+				font-size: 1.7rem

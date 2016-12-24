@@ -1,0 +1,73 @@
+.interview
+    background:
+        color: $white
+        image: url('../img/light-bg.png')
+        repeat: repeat
+    padding-bottom: 5rem
+    padding-top: 10rem
+    &__header
+        background:
+            color: $white
+        font-weight: 400
+        text-align: center
+        color: $color3
+        padding: 3rem 0
+        box-shadow: $shadow
+        @media all and (max-width: $bp-sm)
+            font-size: 2.2rem
+            padding: 2rem 1rem
+    &-section
+        perspective: 1000px
+        &__header
+            background:
+                color: $white
+            font:
+                size: 3rem
+                weight: 400
+            padding: 2rem
+            margin: 10rem 0 3rem
+            color: $color3
+            text-align: center
+            box-shadow: $shadow
+    &-box
+        margin: 3px
+        position: relative
+        padding: 3rem
+        border-radius: .2rem
+        background: $white
+        color: $black
+        box-shadow: $shadow
+        @media screen and (min-width: $bp-md)
+            transform: rotateX(-45deg)
+            transform-origin: top
+            transition: all .3s ease-in-out
+            opacity: 0
+        &.is-showed
+            transform: rotate(0)
+            opacity: 1
+        @media all and (max-width: $bp-md)
+            margin: 2rem 0
+            flex-direction: column
+            justify-content: center
+        &__name
+            text-transform: uppercase
+            background-color: $white
+            color: $color3
+            padding: 1rem 0
+            border-radius: .2rem           
+            font:
+                size: 2rem
+                weight: 700
+            @media all and (max-width: $bp-md)
+                width: 100%
+                margin: 1rem 0
+        &__text          
+            text-align: justify
+            font:
+                size: 1.7rem
+            @media all and (max-width: $bp-md)
+                width: 100%
+            @media all and (max-width: $bp-sm)
+                font-size: 1.5rem
+
+

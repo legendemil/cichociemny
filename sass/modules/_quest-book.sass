@@ -1,0 +1,48 @@
+// quest-book
+.quest-book
+	// box-shadow: 10px 32px 133px 0px rgba(0,0,0,0.75)
+	background: 
+		color: $color3
+	&__form
+		background: 
+			color: $color4
+		& > *
+			margin-bottom: 0
+			border: none !important
+			border-radius: 0 !important
+			font-weight: 700
+		&-name, &-email
+			color: $color1
+			float: left
+			width: 50%
+		&-text
+			color: $color2
+			width: 100%
+			resize: none
+		&-submit
+			transition: .3s
+			width: 100%
+			text-align: center !important
+			color: $white !important
+			background-color: $color1 !important
+			&:hover
+				background: $color3
+	.posts
+		list-style: none !important
+		height: 30rem
+		overflow-y: scroll
+		margin-bottom: 0
+		.post	
+			margin: 0
+			padding: 1rem
+			p
+				margin-bottom: .2rem
+			&:nth-child(even)
+				background-color: $color1
+			&__text
+				font-weight: 300
+				font-style: italic
+			&__date
+				display: block
+				font-size: 1.5rem
+				float: right

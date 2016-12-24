@@ -1,0 +1,53 @@
+//logo
+.logo
+	filter: drop-shadow(8px 8px 10px rgba(0,0,0,0.75))
+	&--abs
+		position: absolute
+		top: 5rem
+		left: 2rem
+
+// page-header
+.page-header
+	background:
+		color: $white
+		image: linear-gradient(transparentize($white, .9), transparentize($white, .9)), url(../img/poland3.jpg)
+		size: cover
+		position: center
+	position: relative
+	color: $white
+	text-shadow: 2px 2px 5px $color1
+	height: 100vh
+	overflow: hidden
+	// @media screen and (min-width: $bp-lg)
+	// 	background-attachment: fixed
+	&__info-box
+		margin-top: 15rem
+	&__heading
+		font:
+			weight: 700
+		text-align: center
+		font-size: 7rem
+		@media screen and (max-width: $bp-md)
+			font-size: 5rem
+			margin-top: 25rem
+		@media screen and (max-width: $bp-sm)
+			font-size: 3rem
+			margin-top: 20rem
+		@media screen and (min-width: $bp-xlg)
+			font-size: 10rem
+			margin-top: 40rem
+	&__desc
+		text-align: center
+		font-size: 3rem
+		@media screen and (max-width: $bp-md)
+			font-size: 2rem
+	&__hero
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translate(-50%, 15%)
+		filter: drop-shadow(8px 8px 10px rgba(0,0,0,0.75))
+		@media screen and (max-width: $bp-md)
+			width: 20rem
+		@media screen and (max-width: $bp-sm)
+			width: 14rem

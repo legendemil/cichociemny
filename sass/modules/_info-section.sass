@@ -1,0 +1,31 @@
+.info-section     
+    background: 
+        color: $white
+    padding: 10rem
+    @media all and (max-width: $bp-md)
+        padding: 1rem
+    &__box
+        width: 80%
+        margin: 0 auto
+        @media all and (max-width: $bp-md)
+            width: 100%
+        text:
+            align: center
+        font:
+            style: italic
+        h3
+            opacity: 1
+            // transform: translateY(10px)
+            // transition: all .6s cubic-bezier(.54, 1.12, .86, 1.09)
+            letter-spacing: .4rem
+            line-height: 1.5
+            &.is-showed
+                opacity: 1
+                transform: translateY(0px)
+            @media all and (max-width: $bp-md)
+                font-size: 3rem
+                padding: 2rem 0 2rem
+            @media all and (max-width: $bp-sm)
+                font-size: 2rem
+                text-align: left
+                padding: 2rem 0 2rem

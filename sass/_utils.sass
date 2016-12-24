@@ -1,0 +1,21 @@
+// breakpoint variables
+$bp-xlg: 140rem
+$bp-lg: 96rem
+$bp-md: 55rem
+$bp-sm: 35rem
+
+
+// utils
+=article-text
+	color: $color2 !important
+	line-height: 2
+	text-align: justify
+	font:
+		weight: 400
+		size: 2rem
+	@media screen and (max-width: $bp-md)
+		font-size: 1.5rem
+	@media screen and (max-width: $bp-sm)
+		font-size: 1.5rem
+		line-height: 1.5
+
